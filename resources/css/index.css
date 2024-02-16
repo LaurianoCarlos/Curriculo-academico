@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --subtitulo: #3CA6A6;
+}
+
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+body {
+    background-color: #10454F;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.header_initial {
+    text-align: center;
+    padding: 20px 0;
+    color: #FFF;
+}
+
+.container_user {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+/* SOBRE MIM */
+
+.main_about_me h2 {
+    font-size: 1.8em;
+    color: var(--subtitulo);
+}
+.main_about_me .main_about_me_content {
+    display: flex;
+}
+
+.main_about_me .main_about_me_content article > div i{
+    font-size: 2em;
+    color: var(--subtitulo);
+}
+
+.main_about_me .main_about_me_content h3  {
+    font-size: 1.6em;
+    margin: 20px 0;
+    color: #818274;
+}
+
+.main_about_me .main_about_me_content p  {
+    margin: 20px 0;
+}
+
+.main_about_me .main_about_me_content img {
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* EXPERIÊNCIA */
+
+.main_experience {
+    margin: 20px 0;
+  }
+
+.main_experience h2 {
+  margin: 20px 0;
+  color: var(--subtitulo);
+}
+
+/* PROJETOS */
+
+.main_projects h2 {
+  color: var(--subtitulo); 
+}
+
+.main_projects .main_projects_content {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 20px 0;
+}
+
+.main_projects .main_projects_content article {
+   margin-top: 0;
+   display: flex;
+   flex-direction: column;
+   max-width: 300px;
+   background-color: #F1F1F1;
+   border-radius: 5px;
+}
+.main_projects .main_projects_content article > header > h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+.main_projects .main_projects_content article > header > h2 > a > img {
+    max-width: 250px;
+    border-radius: 5px;
+ }
+
+ .main_projects .main_projects_content article > header > h2 > a {
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #818274;
+ }
+
+ .main_projects .main_projects_content article > header > h2 > a:hover {
+    color: var(--subtitulo);
+    text-decoration: underline;
+ }
+
+ .main_projects .main_projects_content article > p {
+    margin: 0;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0 20px;
+ }
+
+ /* MINHAS TECNOLOGIAS */
+
+ .main_technologies h2 {
+    margin: 20px 0;
+    color: var(--subtitulo);
+ }
+
+ .main_technologies .main_technologies_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ .main_technologies .main_technologies_content .main_technologies_content_item {
+    display: flex;
+    align-items: flex-end;
+ }
+
+ .main_technologies .main_technologies_content .main_technologies_content_item p {
+    padding: 5px 0;
+    font-style: italic;
+ }
+ .main_technologies_content_item_star {
+   color: yellow;
+   margin-left: 5px;
+ }
+
+ /* EDUCAÇÂO */
+
+ .main_education h2 {
+    margin: 10px 0;
+    color: var(--subtitulo);
+ }
+
+ .main_education .main_education_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .main_education .main_education_content article {
+    background-color: #F1F1F1;
+    padding: 10px;
+    border-radius: 5px;
+ }
+
+ .main_education .main_education_content h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #818274;
+ }
+
+ .main_education .main_education_content p {
+    font-size: 0.875em;
+ }
+
+ /* FOOTER */
+
+ footer {
+    text-align: center;
+    padding: 20px 0px;
+    color: #FFF;
+ }
+
+
+ 
