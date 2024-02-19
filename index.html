@@ -11,6 +11,7 @@
     <header>
         <div class="header_initial">
             <h1>Currículo</h1>
+            <p id="title"></p>
         </div>
     </header>
 
@@ -26,7 +27,7 @@
                             <h3>Desenvolvedor Júnior</h3>
                             <p>Data de Nascimento: 16/03/2000</p>
                         </header>
-                        <div>
+                        <div class="main_about_content_social_media">
                             <h3>Redes Sociais</h3>
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-square-github"></i></a>
@@ -218,8 +219,11 @@
     </main>
     
     <footer>
-        <p>Lauriano Carlos</p>
+        <p>&copy; 2024 LAURIANO CARLOS. Todos os direitos reservados.</p>
+        <button onclick="gerarPDF()">Baixar pdf</button>
     </footer>
     <script src="https://kit.fontawesome.com/f6b0e6c728.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+    <script src="resources/js/index.js"></script>
 </body>
 </html>

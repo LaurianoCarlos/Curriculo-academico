@@ -10,25 +10,39 @@
     /* PROJETOS */
 
     .main_projects h2 {
-        text-align: center;
-        font-size: 1.8em;
+        text-align: start;
         margin-top: 50px;
     }
 
     .main_projects .main_projects_content {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
 
     .main_projects .main_projects_content article {
         margin-bottom: 10px;
     }
 
-    /* FOrMAÇÂO */
+    /* FORMAÇÂO */
 
     .main_education .main_education_content {
         flex-direction: column;
     }
+
+    .main_education .main_education_content article {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* PROJETOS */
+    
+    .main_projects .main_projects_content article {
+        margin-bottom: 10px;
+    }
+
+    /* FORMAÇÂO */
 
     .main_education .main_education_content article {
         margin-bottom: 10px;

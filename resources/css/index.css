@@ -69,6 +69,10 @@ body {
     padding: 20px;
 }
 
+.main_about_me .main_about_me_content article > div i:hover {
+   color: #818274;
+}
+
 /* EXPERIÊNCIA */
 
 .main_experience {
@@ -188,6 +192,7 @@ body {
 
  footer {
     text-align: center;
+    font-size: 0.675em;
     padding: 20px 0px;
     color: #FFF;
  }
