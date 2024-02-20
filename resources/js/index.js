@@ -5,7 +5,7 @@ const intervalo = 300;
 function escreverTexto(elemento, frase, intervalo) {
 
     let index = 0;
-
+    
     let acao = setInterval(() => {
         if (index < frase.length) {
             elemento.innerHTML += frase.charAt(index);
@@ -15,16 +15,17 @@ function escreverTexto(elemento, frase, intervalo) {
             index = 1;
         }
     }, intervalo);
+    
 }
 
 escreverTexto(elemento, frase, intervalo);
 
 
 function gerarPDF() {
-    var doc = new jsPDF();
+    let doc = new jsPDF();
 
     let titulo = 16;
-    let subtitulo = 14;
+    let subtitulo = 13;
     let paragrafo = 12;
 
     // Adicionar título
@@ -52,46 +53,46 @@ function gerarPDF() {
     doc.setFontSize(titulo);
     doc.text("Projetos", 14, 70);
     doc.setFontSize(subtitulo)  
-    doc.text("JBMQUALITY", 15, 78);
+    doc.text("JBMQUALITY", 15, 78); 
     doc.setFontSize(paragrafo);
     doc.text("A página apresenta informações detalhadas sobre os serviços...", 15, 86);
 
-    doc.text("360CYBERTECHNOLOGY", 15, 140);
+    doc.text("360CYBERTECHNOLOGY", 15, 96);
     doc.setFontSize(paragrafo);
-    doc.text("A página apresenta informações detalhadas sobre os serviços...", 15, 150);
+    doc.text("A página apresenta informações detalhadas sobre os serviços...", 15, 104);
 
-    doc.text("DRIVEON", 15, 160);
+    doc.text("DRIVEON", 15, 114);
     doc.setFontSize(paragrafo);
-    doc.text("A página apresenta informações detalhadas sobre os serviços...", 15, 170);
+    doc.text("A página apresenta informações detalhadas sobre os serviços...", 15, 120);
 
     // Tecnologias
     doc.setFontSize(titulo);
-    doc.text("Minhas Tecnologias", 14, 180);
+    doc.text("Minhas Tecnologias", 14, 130);
     doc.setFontSize(paragrafo);
-    doc.text("Java, PHP, JavaScript, MySql, WordPress, Git / Github, Bootstrap 5", 15, 190);
+    doc.text("Java, PHP, JavaScript, MySql, WordPress, Git / Github, Bootstrap 5", 15, 136);
 
     // Formação Acadêmica
     doc.setFontSize(titulo);
-    doc.text("Formação Acadêmica", 14, 210);
+    doc.text("Formação Acadêmica", 14, 146);
     doc.setFontSize(subtitulo);
-    doc.text("Centro Universitário Senac", 15, 220);
+    doc.text("Centro Universitário Senac", 15, 156);
     doc.setFontSize(paragrafo);
-    doc.text("Análise e Desenvolvimento de Sistemas (Agosto/2022 – Cursando)", 15, 240);
+    doc.text("Análise e Desenvolvimento de Sistemas (Agosto/2022 – Cursando)", 15, 166);
 
     doc.setFontSize(subtitulo);
-    doc.text("UpInside Treinamentos", 15, 250);
+    doc.text("UpInside Treinamentos", 15, 176);
     doc.setFontSize(paragrafo);
-    doc.text("Full Stack PHP Developer (Dezembro/2023 – Cursando)", 15, 260);
+    doc.text("Full Stack PHP Developer (Dezembro/2023 – Cursando)", 15, 186);
 
     doc.setFontSize(subtitulo);
-    doc.text("Udemy", 15, 270);
+    doc.text("Udemy", 15, 196);
     doc.setFontSize(paragrafo);
-    doc.text("Java Programação Orientada a Objetos (Nélio Alves - 40h)", 15, 280);
+    doc.text("Java Programação Orientada a Objetos (Nélio Alves - 40h)", 15, 204);
 
     doc.setFontSize(subtitulo);
-    doc.text("Plataforma Curso em Vídeo", 15, 290);
+    doc.text("Plataforma Curso em Vídeo", 15, 214);
     doc.setFontSize(paragrafo);
-    doc.text("Wordpress - 40h, Html5 e Css3 - 40h", 15, 300);
+    doc.text("Wordpress - 40h, Html5 e Css3 - 40h", 15, 220);
 
-    doc.save();
+    doc.save("Lauriano-curriculo.pdf");
 }
